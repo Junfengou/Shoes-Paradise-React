@@ -1,0 +1,33 @@
+.productList {
+	height: 80vh;
+	background-color: var(--mainGray);
+	/* border: solid red; */
+}
+
+.productList__wrapper {
+	/* border: solid blue; */
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+}
+
+.productList__title {
+	/* border: solid red; */
+	height: 10%;
+	display: flex;
+	margin-top: 2rem;
+	justify-content: center;
+	align-items: center;
+}
+
+.productList__body {
+	/* border: solid blue; */
+	height: 80%;
+	width: 70%;
+	display: flex;
+	justify-content: center;
+	/* align-items: center; */
+}

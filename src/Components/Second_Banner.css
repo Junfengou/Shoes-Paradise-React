@@ -1,0 +1,40 @@
+.second__banner {
+	height: 50vh;
+	/* border: solid red; */
+	background: url(../images/second-banner.jpg) no-repeat center center;
+	/* background: url(../images/this__banner.jpg) no-repeat center center; */
+	min-height: 100%;
+	background-size: cover;
+	background-position: center;
+	margin: 0;
+	padding: 0;
+}
+
+.overlay {
+	background: #00000052;
+	top: 100%;
+	left: 0;
+	z-index: 1;
+	height: 100%;
+}
+
+.banner__pic {
+	width: 100%;
+	object-fit: contain;
+}
+
+.second__banner__wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* border: solid red; */
+	height: 100%;
+	font-size: 0.9rem;
+	flex-direction: column;
+	color: var(--mainWhite);
+}
+
+.second__banner__title {
+	/* border: solid blue; */
+	margin-top: 5rem;
+}

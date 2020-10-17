@@ -1,0 +1,23 @@
+.giveaway {
+	height: 65vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.giveaway__left {
+	/* border: solid red; */
+	height: 100%;
+	width: 50%;
+	background: url(../images/this__banner.jpg) no-repeat center center;
+}
+
+.giveaway__right {
+	/* border: solid blue; */
+	height: 100%;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}

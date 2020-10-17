@@ -1,0 +1,63 @@
+.banner {
+	/* border: solid red; */
+	height: 90vh;
+	background: url(../images/style-lg.jpg) no-repeat center center;
+	min-height: 100%;
+	background-size: cover;
+	background-position: center;
+	margin: 0;
+	padding: 0;
+	color: var(--mainWhite);
+	/* border: solid red; */
+}
+
+.overlay {
+	background: #0000008a;
+	top: 100%;
+	left: 0;
+	z-index: 1;
+}
+
+.banner__wrapper {
+	/* border: solid blue; */
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.banner__text {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 60%;
+	width: 99%;
+	/* border: solid blue; */
+}
+
+.banner__text__left {
+	/* border: solid yellow; */
+	height: 15rem;
+	display: flex;
+	width: 35rem;
+	justify-content: center;
+	align-items: center;
+	font-size: 2.8rem;
+}
+.banner__text__right {
+	/* border: solid green; */
+	height: 15rem;
+	display: flex;
+	width: 35rem;
+	justify-content: center;
+	align-items: center;
+	font-size: 2.8rem;
+}
+
+.banner__button {
+	/* border: solid red; */
+	margin-top: 3rem;
+	/* padding-top: 3rem; */
+	/* height: 8rem; */
+}

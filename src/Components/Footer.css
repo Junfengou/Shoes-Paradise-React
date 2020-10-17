@@ -1,0 +1,18 @@
+.footer {
+	height: 10rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: var(--mainGray);
+}
+
+.footer__links > h3 > span {
+	/* border: solid red; */
+	cursor: pointer;
+	margin-right: 3rem;
+}
+
+.copyright {
+	font-size: 0.7rem;
+}

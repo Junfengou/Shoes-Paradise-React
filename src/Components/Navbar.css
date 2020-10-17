@@ -1,0 +1,38 @@
+.navbar {
+	height: 10vh;
+	/* border: solid red; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(255, 255, 255, 0.9);
+	/* background-color: transparent; */
+	position: relative;
+}
+
+.navbar__wrapper {
+	/* border: solid blue; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 80%;
+	height: 100%;
+}
+
+.logo > img {
+	height: 10rem;
+	object-fit: contain;
+	margin-left: 1rem;
+}
+
+.navbar__items {
+	/* border: solid yellow; */
+	width: 15rem;
+	margin-right: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.navbar__items > i {
+	margin-right: 4rem;
+}
