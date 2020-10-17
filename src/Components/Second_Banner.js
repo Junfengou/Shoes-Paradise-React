@@ -25,7 +25,7 @@ export default function Second_Banner() {
 const ButtonContainerz = styled.button `
     font-size: 1rem;
     /* height: 2.3rem; */
-    border: solid var(--mainWhite);
+    border: solid var(--mainGray);
     border-radius: 0.2rem;
     padding: 1rem;
     cursor: pointer;

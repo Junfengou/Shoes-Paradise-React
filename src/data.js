@@ -62,7 +62,7 @@ export const storeProducts = [
     {
       id: 6,
       title: "Tangerine Scream",
-      img: "img/nikeGray.jpg",
+      img: "img/nikeRainbow.jpg",
       price: 260,
       company: "Nike",
       info:

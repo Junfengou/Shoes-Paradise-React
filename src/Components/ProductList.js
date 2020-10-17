@@ -20,8 +20,10 @@ export default class ProductList extends Component {
                     <ProductConsumer>
                         {value => {
                             console.log("List of products", value)
+                             return value.products.map(product => {
+                                 return <Card key={product.id} product={product} />
+                             })
                         }}
-                    
                     </ProductConsumer>
                 </div>
             </div>

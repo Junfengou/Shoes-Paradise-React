@@ -1,25 +1,34 @@
-import React from 'react'
-// import Red from "../images/nikeAir.jpg"
+import React, { Component } from 'react'
 import Red from "../images/nikeFlyknit.jpg"
+import { Link } from "react-router-dom"
+import { ProductConsumer } from "../context"
 import "./Card.css"
 
-export default function Card() {
-    return (
+
+export default class Card extends Component {
+    render() {
+        const {id, title, img, price, inCart} = this.props.product;
+        return (
         <div className="card">
-            <div className="card__wrapper">
-                <div className="card__photo">
-                    <img src={Red} alt="nikeRed" />
-                </div>
-                <div className="card__info">
-                    <div className="card_title">
-                        <h4>Nike Air <strong>Limited Edition</strong></h4>
+            <ProductConsumer>
+                {value => (
+                    <div className="card__wrapper" onClick={ () => value.handleDetail(id)}>
+                        <div className="card__photo">
+                            <img src={img} alt="nikeRed" />
+                        </div>
+                        <div className="card__info">
+                            <div className="card_title">
+                                <h4>{title}</h4>
+                            </div>
+                            <div className="card__price">
+                                <h4>${price}</h4>
+                                <i className="fas fa-cart-plus"/>
+                            </div>
+                        </div>
                     </div>
-                    <div className="card__price">
-                        <h4>$240</h4>
-                        <i className="fas fa-cart-plus"/>
-                    </div>
-                </div>
-            </div>
+                )}
+            </ProductConsumer>
         </div>
-    )
+        )
+    }
 }

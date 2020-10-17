@@ -45,13 +45,21 @@ class ProductProvider extends Component {
         const product = this.state.products.find(item => item.id === id)
         return product;
     }
+
+    handleDetail = (id) => {
+        //console.log("hello from details");
+        const product = this.getItem(id);
+        this.setState(() => {
+            return {detailProduct:product,}
+        })
+    }
  
     render() {
         return (
             <ProductContext.Provider value={{
                 //products: this.state.products,
                 ...this.state,
-               
+                handleDetail: this.handleDetail,
             }}>
                 {this.props.children} {/**Must handle children in here */}
             </ProductContext.Provider>
