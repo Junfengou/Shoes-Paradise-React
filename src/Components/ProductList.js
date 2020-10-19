@@ -21,7 +21,11 @@ export default class ProductList extends Component {
                         {value => {
                             console.log("List of products", value)
                              return value.products.map(product => {
-                                 return <Card key={product.id} product={product} />
+                                 if(product.id == "6" || product.id == "8" || product.id == "7" || product.id == "4" )
+                                 {
+                                     return <Card key={product.id} product={product} />
+                                 }
+                                //  return <Card key={product.id} product={product} />
                              })
                         }}
                     </ProductConsumer>

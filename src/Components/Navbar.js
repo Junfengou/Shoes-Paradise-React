@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import Logo from "../images/Logo.png"
+import { Link } from "react-router-dom"
 import "./Navbar.css"
 
 
@@ -7,8 +8,10 @@ export default function Navbar() {
     return (
         <div className="navbar">
             <div className="navbar__wrapper">
-                <div className="logo">
-                    <img src={Logo} alt="logo" />
+                <div>
+                    <Link to="/" className="logo">
+                        <img src={Logo} alt="logo" />
+                    </Link>
                 </div>
 
                 <div className="navbar__items">

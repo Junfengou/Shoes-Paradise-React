@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Red from "../images/nikeFlyknit.jpg"
 import { Link } from "react-router-dom"
 import { ProductConsumer } from "../context"
+import PropTypes from "prop-types"
 import "./Card.css"
 
 
@@ -31,4 +32,14 @@ export default class Card extends Component {
         </div>
         )
     }
+}
+
+Card.propTypes = {
+	product: PropTypes.shape({
+		id: PropTypes.number,
+		img: PropTypes.string,
+		title: PropTypes.string,
+		price: PropTypes.number,
+		inCart: PropTypes.bool,
+	}).isRequired
 }
