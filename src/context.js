@@ -8,6 +8,7 @@ import { storeProducts, detailProduct} from "./data"
 //create context object
 const ProductContext = React.createContext();
 
+
 class ProductProvider extends Component {
     state = {
         products: [],
