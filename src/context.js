@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { storeProducts, detailProduct} from "./data"
+import Axios from "axios"
 
 
 
@@ -12,16 +13,51 @@ const ProductContext = React.createContext();
 class ProductProvider extends Component {
     state = {
         products: [],
+        userData: {
+            token: undefined,
+            user: undefined,
+        },
        
     }
     componentDidMount() 
     {
         this.setProduct();
+        this.checkLoggedIn();
         
     }
 
     componentWillUpdate() {
         localStorage.setItem("Item", JSON.stringify(this.state.cart));
+    }
+
+
+    checkLoggedIn = async () => {
+        let token = localStorage.getItem("auth-token");
+        if(token === null)
+        {
+            localStorage.setItem("auth-token", "");
+            token = "";
+        }
+
+        const tokenRes = await Axios.post("http://localhost:5000/users/tokenIsValid",
+        null,
+        {headers: {"x-auth-token" : token}});
+
+        console.log(tokenRes);
+        if(tokenRes.data)
+        {
+            const userRes = await Axios.get("http://localhost:5000/users/",
+            {header : {"x-auth-token" : token}
+        });
+        console.log("userRes: ", userRes);
+        
+        this.setState(() => {
+            return {
+                token,
+                user : userRes.data
+            }
+        })
+        }
     }
 
 
