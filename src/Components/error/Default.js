@@ -1,5 +1,5 @@
 import React from 'react'
-import Footer from "../pages/Footer"
+// // import Footer from "../pages/Footer"
 import styled from "styled-components"
 import { Link } from "react-router-dom"
 import "./Default.css"

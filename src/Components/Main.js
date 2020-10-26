@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import Banner from "./pages/Banner"
-import ProductList from "./ProductList"
-import SecBanner from "./pages/Second_Banner"
-import Comment from ".//pages/Comment"
-import GiveAway from "./pages/GiveAway"
+import Banner from "./page/Banner"
+import ProductList from "./page/ProductList"
+import SecBanner from "./page/Second_Banner"
+import Comment from "./page/Comment"
+import GiveAway from "./page/GiveAway"
 
 export default class Main extends Component {
     render() {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Card from "./pages/Card"
-import { ProductConsumer } from "../context"
+import Card from "./Card"
+import { ProductConsumer } from "../../context"
 import "./ProductList.css"
 
 export default class ProductList extends Component {
