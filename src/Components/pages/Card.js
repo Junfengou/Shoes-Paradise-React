@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import Red from "../images/nikeFlyknit.jpg"
-import { Link } from "react-router-dom"
-import { ProductConsumer } from "../context"
+// import Red from "../images/nikeFlyknit.jpg"
+// import { Link } from "react-router-dom"
+import { ProductConsumer } from "../../context"
 import PropTypes from "prop-types"
 import "./Card.css"
 

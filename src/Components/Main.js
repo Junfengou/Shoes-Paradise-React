@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
-import Banner from "./Banner"
+import Banner from "./pages/Banner"
 import ProductList from "./ProductList"
-import SecBanner from "./Second_Banner"
-import Comment from "./Comment"
-import GiveAway from "./GiveAway"
-import Footer from "./Footer"
+import SecBanner from "./pages/Second_Banner"
+import Comment from ".//pages/Comment"
+import GiveAway from "./pages/GiveAway"
 
 export default class Main extends Component {
     render() {
@@ -15,7 +14,6 @@ export default class Main extends Component {
                 <SecBanner />
                 <Comment />
                 <GiveAway />
-                <Footer />
             </div>
         )
     }

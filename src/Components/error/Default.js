@@ -1,5 +1,5 @@
 import React from 'react'
-import Footer from "./Footer"
+import Footer from "../pages/Footer"
 import styled from "styled-components"
 import { Link } from "react-router-dom"
 import "./Default.css"
@@ -14,9 +14,9 @@ function Default() {
                     <ButtonContainerz>Continue shopping</ButtonContainerz>
                 </Link>
             </div>
-            <div className="footer__section">
+            {/* <div className="footer__section">
                 <Footer />
-            </div>
+            </div> */}
         </div>
     )
 }

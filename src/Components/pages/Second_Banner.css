@@ -1,7 +1,7 @@
 .second__banner {
 	height: 50vh;
 	/* border: solid red; */
-	background: url(../images/second-banner.jpg) no-repeat center center;
+	background: url(../../images/second-banner.jpg) no-repeat center center;
 	/* background: url(../images/this__banner.jpg) no-repeat center center; */
 	min-height: 100%;
 	background-size: cover;

@@ -1,5 +1,5 @@
 import React from 'react'
-import Gift from "../images/gift.jpg"
+// import Gift from "../images/gift.jpg"
 import styled from "styled-components"
 import "./GiveAway.css"
 

@@ -1,7 +1,7 @@
-import React from 'react'
-import "./Footer.css"
+import React from 'react';
+import "./Footer.css";
 
-export default function Footer() {
+function Footer() {
     return (
         <div className="footer">
             <div className="footer__links">
@@ -20,3 +20,5 @@ export default function Footer() {
         </div>
     )
 }
+
+export default Footer
